@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "SimpleThread";
+    src: local("SimpleThread"),
+        url("../public/font/SimpleThread.otf") format("opentype");
+
+    font-family: "rainy";
+    src: local("rainyhearts"),
+        url("../public/font/rainyhearts.ttf") format("truetype");
+    font-family: "Orbitron";
+    src: local("Orbitron"),
+        url("../public/font/Orbitron.ttf") format("truetype");
+}
+
+@layer base {
+    :root {
+        --purp: #160c2c;
+        --secondPurp: #fb91ff;
+
+        --bluey: #0a192f;
+
+
+        --blueyBis: #0c1035;
+        --secondBluey: #46f3ff;
+        --secondBlueyBg: #46f3ff25;
+        --secondBlueyBis: #2cfd6b;
+        --secondBlueyBisBg: #2cfd6b25;
+    }
+}
+
+
+body {
+    font-family: "Orbitron";
+    background-color: var(--blueyBis);
+    @apply text-white
+}

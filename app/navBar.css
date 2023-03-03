@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav {
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    z-index: 11;
+    padding: 0px 50px;
+    height: 70px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+li {
+    padding: 10px;
+}
+
+a {
+    display: flex;
+
+}
+
+a>p {
+    color: var(--secondBluey);
+    @apply text-3xl px-1.5
+}
+
+.textLink {
+    @apply m-auto text-sm hover:text-bluey
+}
+
