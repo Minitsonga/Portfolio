@@ -17,14 +17,7 @@
 
 @layer base {
     :root {
-        --purp: #160c2c;
-        --secondPurp: #fb91ff;
-
         --bluey: #0a192f;
-
-
-        --blueyBis: #0c1035;
-        --secondBluey: #46f3ff;
         --secondBlueyBg: #46f3ff25;
         --secondBlueyBis: #2cfd6b;
         --secondBlueyBisBg: #2cfd6b25;
@@ -34,6 +27,5 @@
 
 body {
     font-family: "Orbitron";
-    background-color: var(--blueyBis);
-    @apply text-white
+    @apply text-white bg-bluey-bg
 }

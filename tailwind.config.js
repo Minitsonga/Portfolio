@@ -11,7 +11,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        bluey: "#46f3ff",
+        purp: {
+          bg: "#46f3ff",
+          snd: "#fb91ff",
+        },
+        bluey: {
+          bg: "#0c1035",
+          snd: "#46f3ff",
+        },
+        purp: {
+          bg: "#46f3ff",
+          snd: "#fb91ff",
+        },
+
       },
     },
   },
