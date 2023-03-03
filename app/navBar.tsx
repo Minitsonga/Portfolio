@@ -6,7 +6,7 @@ export default function GlobalNavBar() {
   return (
     <nav>
       <div className="logo"></div>
-      <div className="flex m-1">
+      <div className="flex">
         <li>
           <a href="#about">
             <p className="r">[</p>

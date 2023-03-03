@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 nav {
     text-decoration: none;
@@ -30,11 +28,11 @@ a {
 }
 
 a>p {
-    color: var(--secondBluey);
-    @apply text-3xl px-1.5
+    
+    @apply text-3xl px-1.5 text-bluey-snd
 }
 
 .textLink {
-    @apply m-auto text-sm hover:text-bluey
+    @apply m-auto text-sm hover:text-bluey-snd
 }
 

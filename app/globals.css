@@ -17,8 +17,13 @@
 
 @layer base {
     :root {
-        --bluey: #0a192f;
+        --purp: #160c2c;
+        --secondPurp: #fb91ff;
+
+        --bluey: #0c1035;
+        --secondBluey: #46f3ff;
         --secondBlueyBg: #46f3ff25;
+
         --secondBlueyBis: #2cfd6b;
         --secondBlueyBisBg: #2cfd6b25;
     }
