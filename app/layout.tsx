@@ -2,6 +2,7 @@
 
 import "./globals.css";
 import NavBar from "./navBar";
+import SideLinks from "./sideLinks";
 
 export default function RootLayout({
   children,
@@ -12,7 +13,8 @@ export default function RootLayout({
     <html>
       <head></head>
       <body>
-        <NavBar></NavBar>
+        <NavBar/>
+        <SideLinks/>
         <main>{children}</main>
       </body>
     </html>
