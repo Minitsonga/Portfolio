@@ -3,7 +3,7 @@ import navBar from "./navBar.module.css";
 export default function GlobalNavBar() {
   return (
     <div className="h-auto">
-      <div className="border-l-2"></div>
+      <div className="border-l"></div>
       <div className="absolute top2/4 right-0 translate-y-2/4 flex flex-col justify-center m-auto">
         <ul className="mb-4">
           <li>
