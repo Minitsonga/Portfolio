@@ -2,9 +2,9 @@ import navBar from "./navBar.module.css";
 
 export default function GlobalNavBar() {
   return (
-    <div className={navBar.navigation}>
+    <div className="h-auto">
       <div className="border-l-2"></div>
-      <div className="flex flex-col justify-center m-auto">
+      <div className="absolute top2/4 right-0 translate-y-2/4 flex flex-col justify-center m-auto">
         <ul className="mb-4">
           <li>
             <a href="#about">
@@ -35,13 +35,13 @@ export default function GlobalNavBar() {
             </a>
           </li>
         </ul>
-        <button className={navBar.btn} >
+        <button className={navBar.btn}>
           <a className="" href="/resume.pdf" target="_blank">
             Mon CV
           </a>
         </button>
       </div>
-      {/* <div className="border-l-2 pt-40"></div> */}
+      <div className="border-l "></div>
     </div>
   );
 }
