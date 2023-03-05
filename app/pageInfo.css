@@ -9,10 +9,3 @@
     min-height: 60vh;
     height: 60vh;
 }
-
-.div-with-vertical-line {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }

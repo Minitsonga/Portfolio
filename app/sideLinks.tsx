@@ -12,7 +12,7 @@ import { VscGithubAlt } from "react-icons/vsc";
 
 export default function SideLinks() {
   return (
-    <div className="justify-center items-center flex flex-col fixed bottom-0 left-10 right-auto w-12">
+    <div className="justify-center items-center flex flex-col fixed bottom-0 left-12 right-auto w-12">
       <ul className="mb-4">
         <li>
           <a className="hover:text-bluey-snd cursor-pointer hover:-translate-y-1 hover:scale-110 duration-150" href="">
@@ -36,7 +36,7 @@ export default function SideLinks() {
           </a>
         </li>
       </ul>
-      <div className="border-l-2 pt-40">
+      <div className="border-l pt-36">
       </div>
     </div>
   );
