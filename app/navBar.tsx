@@ -1,12 +1,11 @@
 import "./navBar.css";
 import styles from "./button.module.css";
 
-
 export default function GlobalNavBar() {
   return (
-    <nav>
-      <div className="logo"></div>
-      <div className="flex">
+    <div className="flex justify-center items-center flex-col fixed top-2/4 left-auto right-20 w-12 h-auto">
+      <div className="border-l-2"></div>
+      <ul className="mb-4">
         <li>
           <a href="#about">
             <p className="r">[</p>
@@ -37,9 +36,12 @@ export default function GlobalNavBar() {
         </li>
 
         <button className={styles.btn}>
-          <a className="" href="/resume.pdf" target="_blank">Mon CV</a>
+          <a className="" href="/resume.pdf" target="_blank">
+            Mon CV
+          </a>
         </button>
-      </div>
-    </nav>
+      </ul>
+      {/* <div className="border-l-2 pt-40"></div> */}
+    </div>
   );
 }

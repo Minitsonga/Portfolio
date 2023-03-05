@@ -3,40 +3,41 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   solid,
   regular,
-  thin,
   brands,
   icon,
 } from "@fortawesome/fontawesome-svg-core/import.macro";
 
-import { UitGithubAlt, UitLinkedinAlt, UitTwitterAlt  } from "@iconscout/react-unicons-thinline";
-
+import { CiGlobe, CiTwitter, CiLinkedin } from "react-icons/ci";
+import { VscGithubAlt } from "react-icons/vsc";
 
 export default function SideLinks() {
   return (
-    <div className="w-12 fixed bottom-0 left-10 right-auto">
-      <ul>
+    <div className="justify-center items-center flex flex-col fixed bottom-0 left-10 right-auto w-12">
+      <ul className="mb-4">
         <li>
-          <a className="hover:text-bluey-snd cursor-pointer" href="">
-            <UitGithubAlt />
+          <a className="hover:text-bluey-snd cursor-pointer hover:-translate-y-1 hover:scale-110 duration-150" href="">
+            <VscGithubAlt size="24px" />
           </a>
         </li>
         <li>
-          <a className="hover:text-bluey-snd cursor-pointer" href="">
-            <UitLinkedinAlt />
+          <a className="hover:text-bluey-snd cursor-pointer hover:-translate-y-1 hover:scale-110 duration-150" href="">
+            <CiLinkedin size="24px" />
           </a>
         </li>
         <li>
-          <a className="hover:text-bluey-snd cursor-pointer" href="">
-            <UitTwitterAlt />
+          <a className="hover:text-bluey-snd cursor-pointer hover:-translate-y-1 hover:scale-110 duration-150" href="">
+            <CiTwitter size="24px" />
           </a>
         </li>
 
         <li>
-          <a className="hover:text-bluey-snd cursor-pointer" href="">
-            <FontAwesomeIcon icon={thin("globe")} />
+          <a className="hover:text-bluey-snd cursor-pointer hover:-translate-y-1 hover:scale-110 duration-150" href="">
+            <CiGlobe size="24px" />
           </a>
         </li>
       </ul>
+      <div className="border-l-2 pt-40">
+      </div>
     </div>
   );
 }
