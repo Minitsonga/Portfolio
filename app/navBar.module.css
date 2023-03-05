@@ -1,0 +1,19 @@
+
+
+.textLink {
+    @apply m-auto text-sm hover:text-bluey-snd
+}
+
+.navigation {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+
+}
+
+.btn {
+
+    @apply text-bluey-snd bg-transparent border-2 border-bluey-snd rounded h-12 w-fit m-auto px-4 cursor-pointer hover:bg-bluey-snd/25
+   
+}
