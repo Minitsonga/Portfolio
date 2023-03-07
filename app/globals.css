@@ -37,7 +37,14 @@ body {
     @apply text-white bg-bluey-bg
 }
 
+main {
+    margin: 0px auto;
+    width: 100%;
+    max-width: 1600px;
+    min-height: 100vh;
+    padding: 200px 150px;
 
+}
 
 li {
     padding: 10px;

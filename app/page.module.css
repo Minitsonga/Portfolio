@@ -6,8 +6,6 @@
     -webkit-box-align: center;
     flex-direction: column;
     align-items: flex-start;
-    min-height: 60vh;
-    height: 100%;
 }
 
 
