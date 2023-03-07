@@ -7,8 +7,10 @@ import {
   icon,
 } from "@fortawesome/fontawesome-svg-core/import.macro";
 
-import { CiGlobe, CiTwitter, CiLinkedin } from "react-icons/ci";
+import { CiGlobe, CiTwitter, CiLinkedin, CiMail } from "react-icons/ci";
 import { VscGithubAlt } from "react-icons/vsc";
+
+
 
 export default function SideLinks() {
   return (
@@ -35,9 +37,14 @@ export default function SideLinks() {
             <CiGlobe size="24px" />
           </a>
         </li>
+
+        
+        <li>
+          <a className="hover:text-bluey-snd cursor-pointer hover:-translate-y-1 hover:scale-110 duration-150" href="">
+            <CiMail size="24px"/>
+          </a>
+        </li>
       </ul>
-      <div className="border-l pt-36">
       </div>
-    </div>
   );
 }
