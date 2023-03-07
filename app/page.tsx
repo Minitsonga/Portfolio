@@ -8,7 +8,7 @@ export default function PageInfo() {
         <h1>Hello, Next.js!</h1>
         <p className="text-3xl text-white">
           Im a new fdp qui va tous vous tuer bande de connard
-        </p>git
+        </p>
       </div>
     </main>
   );
