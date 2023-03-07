@@ -1,5 +1,3 @@
-
-
 .textLink {
     @apply m-auto text-sm hover:text-bluey-snd
 }
@@ -12,8 +10,37 @@
 
 }
 
-.btn {
+.holder {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-    @apply text-bluey-snd bg-transparent border-2 border-bluey-snd rounded h-12 w-fit m-auto px-4 cursor-pointer hover:bg-bluey-snd/25
-   
+.holder::before {
+    content: "";
+    bottom: 0;
+    left: 50%;
+    height: 40%;
+    width: 1px;
+    background-color: white; /* couleur de la ligne verticale */
+}
+
+.holder::after {
+    content: "";
+    top: 0;
+    left: 50%;
+    height: 40%;
+    width: 1px;
+    background-color: white; /* couleur de la ligne verticale */
+}
+
+
+.btn {
+    @apply text-bluey-snd bg-transparent border-2 border-bluey-snd rounded h-14 w-3/5 px-4 mt-2.5 mb-6 cursor-pointer hover:bg-bluey-snd/25
 }
