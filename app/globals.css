@@ -46,16 +46,22 @@ main {
 
 }
 
+section{
+    margin: 0px 100px;
+    padding: 100px 0px;
+}
+
 li {
     padding: 10px;
 }
 
-a {
+li>a {
     display: flex;
 
 }
 
-a>p {
+li>a>p {
     
     @apply text-3xl px-1.5 text-bluey-snd
 }
+
