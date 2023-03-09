@@ -25,8 +25,11 @@ export default function PageInfo() {
           [ <p className="text-white text-4xl m-auto px-5">About me</p>]
         </h1>
         
-        <p className="pl-20 pr-24 text-5xl opacity-70 mb-5">
-          Passioné par le développement de jeux vidéo et par le web
+        <p className="m-auto text-md mb-5">
+          Salut ! Je m'appelle Julie Vandamme et je suis actuellement étudiant en informatique.
+          Je suis passionné par les jeux vidéo depuis mes 12 ans et il y a 3 ans je me suis interréssé au monde du web.
+          J'ai créé plusieurs jeux et sites internet qui m'ont permi d'apprendre le <span>C# sur Unity</span> et <span>NodeJs</span>,
+           <span>Javascript</span>,<span>ReactJs</span>
         </p>
         <p className="text-2xl px-40 mx-32">
           Je suis étudiant en informatique. J'adore coder, créer des jeux,
