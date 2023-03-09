@@ -24,3 +24,29 @@
 .btn {
     @apply text-bluey-snd bg-transparent border-2 border-bluey-snd rounded h-14 w-44 px-4 mt-2.5 mb-6 cursor-pointer hover:bg-bluey-snd/25
 }
+
+.title::before
+{
+    content: "";
+    display: block;
+    position: relative;
+    width: 400px;
+    height: 1px;
+    margin: auto;
+    margin-right: 20px;
+    background-color: var(--secondBluey);
+    opacity: 50%;
+}
+
+.title::after
+{
+    content: "";
+    display: block;
+    position: relative;
+    width: 400px;
+    height: 1px;
+    margin: auto;
+    margin-left: 20px;
+    background-color: var(--secondBluey);
+    opacity: 50%;
+}
