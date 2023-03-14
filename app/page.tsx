@@ -1,4 +1,5 @@
 import "./pageInfo.css";
+import Image from "next/image";
 
 export default function PageInfo() {
   return (
@@ -25,7 +26,7 @@ export default function PageInfo() {
         </h1>
 
         <div className="flex">
-          <p className="ml-26 pl-10 w-2/3 pr-40 text-md mb-5">
+          <p className="ml-26 pr-20 pl-20 w-2/3 text-md mb-5">
             Salut ! Je m'appelle Julie Vandamme et je suis actuellement étudiant
             en informatique. Je suis passionné par les jeux vidéo depuis mes 12
             ans et il y a 3 ans, je me suis intéressé au monde du web. J'ai créé
@@ -34,7 +35,13 @@ export default function PageInfo() {
             <span>Javascript</span>, <span>ReactJs</span>.
           </p>
 
-          <p>IMAGE ICI</p>
+          <Image
+            className="meImg mr-20"
+            src="/../public/moi.jpg"
+            width={250}
+            height={200}
+            alt="Me"
+          ></Image>
         </div>
       </section>
     </main>

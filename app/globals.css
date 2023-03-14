@@ -46,7 +46,7 @@ main {
 
 }
 
-section{
+section {
     margin: 0px 100px;
     padding: 100px 0px;
 }
@@ -57,11 +57,10 @@ li {
 
 li>a {
     display: flex;
-
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 li>a>p {
-    
+
     @apply text-3xl px-1.5 text-bluey-snd
 }
-
