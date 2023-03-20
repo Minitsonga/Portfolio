@@ -1,0 +1,29 @@
+.holderLinks {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.holderLinks::before {
+    content: "";
+    bottom: 0;
+    right: 50%;
+    height: 50%;
+    width: 1px;
+    background-color: white; /* couleur de la ligne verticale */
+}
+
+.holderLinks::after {
+    content: "";
+    top: 0;
+    right: 50%;
+    height: 50%;
+    width: 1px;
+    background-color: white; /* couleur de la ligne verticale */
+}
