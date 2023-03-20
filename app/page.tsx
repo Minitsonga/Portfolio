@@ -23,7 +23,7 @@ export default function PageInfo() {
 
       <section id="about" className="content mt-auto mb-44">
         <h1 className="flex title blueText pl-8 text-6xl mb-8">
-          [ <p className="text-white text-4xl m-auto px-5">About me</p>]
+          [ <p className="text-white text-3xl m-auto px-5">About me</p>]
         </h1>
 
         <div className="flex">
@@ -77,39 +77,54 @@ export default function PageInfo() {
 
       <section id="projets" className="content mt-auto mb-44">
         <h1 className="flex title blueText pl-8 text-6xl mb-8">
-          [ <p className="text-white text-4xl m-auto px-5">Mes projets</p>]
+          [ <p className="text-white text-3xl m-auto px-5">Mes projets</p>]
         </h1>
 
-        <div className="w-full">
-          <div className="grid grid-rows-3 grid-flow-col gap-4">
-            <div className="row-span-3 ">
+        <div className="pl-28 pt-5 w-full">
+          <div className="grid grid-cols-3 grid-flow-row gap-x-4 gap-y-10">
+            <a className="linkImg" href="#">
               <Image
-                className="floupy"
+                className="gridImg"
                 src="/../public/img/FloupyFlap.png"
                 width={250}
                 height={200}
                 alt="floupyFlap"
               ></Image>
-            </div>
-            <div className="col-span-2">
+              <div className="grid-overlay"></div>
+              <div className="grid-text">
+                <h1 className="text-xl font-medium tracking-wider pb-3">FlouppyFlap</h1><p className="tracking-wider">Évite les tuyaux et parcours la plus grande distance.</p> 
+              </div>
+            </a>
+
+            <a className="linkImg" href="#">
               <Image
-                className="protect"
+                className="gridImg"
                 src="/../public/img/Protect.png"
                 width={250}
                 height={200}
                 alt="protect"
               ></Image>
-            </div>
-            <div className="row-span-2 col-span-2">
+              <div className="grid-overlay"></div>
+              <div className="grid-text">
+                <h1 className="text-xl font-medium tracking-wider pb-3">Protect</h1><p className="tracking-wider">Survie en esquivant les astéroïdes dans une simulation 2D dans l'espace.</p> 
+              </div>
+            </a>
+
+            <a className="linkImg" href="#">
               <Image
-                className="fusycal"
+                className="gridImg"
                 src="/../public/img/Fusycal.png"
                 width={250}
                 height={200}
                 alt="fusycal"
               ></Image>
-            </div>
-            <div className="row-span-3">
+              <div className="grid-overlay"></div>
+              <div className="grid-text">
+                <h1 className="text-xl font-medium tracking-wider pb-3">Fusycal</h1><p className="tracking-wider">Collecte des héros dans un jeu de cartes fantaisie.</p> 
+              </div>
+            </a>
+
+            <a className="linkImg" href="#">
               <Image
                 className="gridImg "
                 src="/../public/img/Laexo.png"
@@ -117,8 +132,13 @@ export default function PageInfo() {
                 height={200}
                 alt="Laexo"
               ></Image>
-            </div>
-            
+              <div className="grid-overlay"></div>
+              <div className="grid-text">
+                <h1 className="text-xl font-medium tracking-wider pb-3">Laexo.tv</h1> <p className="tracking-wider">Suis les Lives et événements de ton streamer Twitch sur son site vitrine.</p> 
+              </div>
+            </a>
+
+
           </div>
         </div>
       </section>
