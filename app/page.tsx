@@ -24,7 +24,9 @@ export default function PageInfo() {
         </button>
       </section>
 
-      <section id="about" className="content mt-auto mb-44">
+      <div id="about" ></div>
+
+      <section id="about" className="content mt-44 mb-44 p-y-24">
         <h1 className="flex title blueText pl-8 text-6xl mb-8">
           [ <p className="text-white text-3xl m-auto px-5">About me</p>]
         </h1>
@@ -78,7 +80,7 @@ export default function PageInfo() {
         </div>
       </section> */}
 
-      <section id="projets" className="content mt-auto pt-40 mb-44">
+      <section id="projets" className="content mt-auto mb-44">
         <h1 className="flex title blueText pl-8 text-6xl mb-8">
           [ <p className="text-white text-3xl m-auto px-5">Mes projets</p>]
         </h1>
@@ -188,12 +190,7 @@ export default function PageInfo() {
           </p>
           <br />
           <p className="text-center text-2xl ">
-            Je suis actuellement a la{" "}
-            <strong className="blueText font-normal">
-              recherche
-            </strong>{" "}
-            d'un <strong className="blueText font-normal">stage</strong> de{" "}
-            <strong className="blueText font-normal">2 a 4 mois</strong>
+            Je suis actuellement a la <span>recherche</span> d'un <span>stage</span> de <span>2 a 4 mois</span>
           </p>
           <button className="btn m-auto mt-24">
             <a

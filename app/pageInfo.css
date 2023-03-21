@@ -7,12 +7,12 @@
     align-items: flex-start;
 }
 
-.blueText {
+
+.blueText, p>span {
     @apply text-bluey-snd
 }
 
-
-p>span {
+.blueLink{
     @apply text-bluey-snd hover:decoration-bluey-snd hover:decoration-1 hover:underline
 }
 
