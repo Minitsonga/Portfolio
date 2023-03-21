@@ -1,5 +1,5 @@
 .textLink {
-    @apply m-auto text-sm hover:text-bluey-snd
+    @apply m-auto text-lg hover:text-bluey-snd
 }
 
 .navigation {
