@@ -2,7 +2,6 @@ import "./pageInfo.css";
 import Image from "next/image";
 
 export default function PageInfo() {
-
   return (
     <main className="px-12 md:px-28 xl:px-32 max-2xl:px-0">
       <section className="content text-center mb-28">
@@ -11,11 +10,15 @@ export default function PageInfo() {
           Passioné par le développement de jeux vidéo et par le web
         </p>
         <p className="text-2xl px-40 mx-32">
-          Étudiant en informatique. J'adore coder, créer des jeux,
-          apprendre de nouvelles choses.
+          Étudiant en informatique. J'adore coder, créer des jeux, apprendre de
+          nouvelles choses.
         </p>
         <button className="btn m-auto mt-8">
-          <a className="text-center text-xl" href="/resume.pdf" target="_blank">
+          <a
+            className="text-center text-xl"
+            href={"/resume.pdf"}
+            target={"_blank"}
+          >
             Mon CV
           </a>
         </button>
@@ -27,12 +30,12 @@ export default function PageInfo() {
         </h1>
 
         <div className="flex">
-          <p className="ml-26 pr-20 pl-20 w-2/3 text-md mb-5">
-            Salut ! Je m'appelle Julien Vandamme et je suis actuellement étudiant
-            en informatique. Je suis passionné par les jeux vidéo depuis mes 12
-            ans et il y a 3 ans, je me suis intéressé au monde du web. J'ai créé
-            plusieurs jeux et sites internet qui m'ont permis d'apprendre le{" "}
-            <span>C# sur Unity</span> et <span>Node.js</span>,{" "}
+          <p className="ml-26 pr-20 pl-20 w-2/3 text-xl mb-5">
+            Salut ! Je m'appelle Julien Vandamme et je suis actuellement
+            étudiant en informatique. Je suis passionné par les jeux vidéo
+            depuis mes 12 ans et il y a 3 ans, je me suis intéressé au monde du
+            web. J'ai créé plusieurs jeux et sites internet qui m'ont permis
+            d'apprendre le <span>C# sur Unity</span> et <span>Node.js</span>,{" "}
             <span>Javascript</span>, <span>ReactJs</span>.
           </p>
 
@@ -82,7 +85,11 @@ export default function PageInfo() {
 
         <div className="pl-28 pt-5 w-full">
           <div className="grid grid-cols-3 grid-flow-row gap-x-4 gap-y-10">
-            <a className="linkImg"  target={"_blank"} href="https://minitsonga.itch.io/floupy-flap">
+            <a
+              className="linkImg"
+              target={"_blank"}
+              href="https://minitsonga.itch.io/floupy-flap"
+            >
               <Image
                 className="gridImg"
                 src="/../public/img/FloupyFlap.png"
@@ -92,11 +99,20 @@ export default function PageInfo() {
               ></Image>
               <div className="grid-overlay"></div>
               <div className="grid-text">
-                <h1 className="text-xl font-medium tracking-wider pb-3">FloupyFlap</h1><p className="tracking-wider">Évite les tuyaux et parcours la plus grande distance.</p> 
+                <h1 className="text-xl font-medium tracking-wider pb-3">
+                  FloupyFlap
+                </h1>
+                <p className="tracking-wider">
+                  Évite les tuyaux et parcours la plus grande distance.
+                </p>
               </div>
             </a>
 
-            <a className="linkImg" target={"_blank"} href="https://minitsonga.itch.io/protect">
+            <a
+              className="linkImg"
+              target={"_blank"}
+              href="https://minitsonga.itch.io/protect"
+            >
               <Image
                 className="gridImg"
                 src="/../public/img/Protect.png"
@@ -106,11 +122,21 @@ export default function PageInfo() {
               ></Image>
               <div className="grid-overlay"></div>
               <div className="grid-text">
-                <h1 className="text-xl font-medium tracking-wider pb-3">Protect</h1><p className="tracking-wider">Survie en esquivant les astéroïdes dans une simulation 2D dans l'espace.</p> 
+                <h1 className="text-xl font-medium tracking-wider pb-3">
+                  Protect
+                </h1>
+                <p className="tracking-wider">
+                  Survie en esquivant les astéroïdes dans une simulation 2D dans
+                  l'espace.
+                </p>
               </div>
             </a>
 
-            <a className="linkImg"  target={"_blank"} href="https://minitsonga.itch.io/fusycal">
+            <a
+              className="linkImg"
+              target={"_blank"}
+              href="https://minitsonga.itch.io/fusycal"
+            >
               <Image
                 className="gridImg"
                 src="/../public/img/Fusycal.png"
@@ -120,11 +146,16 @@ export default function PageInfo() {
               ></Image>
               <div className="grid-overlay"></div>
               <div className="grid-text">
-                <h1 className="text-xl font-medium tracking-wider pb-3">Fusycal</h1><p className="tracking-wider">Collecte des héros dans un jeu de cartes fantaisie.</p> 
+                <h1 className="text-xl font-medium tracking-wider pb-3">
+                  Fusycal
+                </h1>
+                <p className="tracking-wider">
+                  Collecte des héros dans un jeu de cartes fantaisie.
+                </p>
               </div>
             </a>
 
-            <a className="linkImg"  target={"_blank"} href="https://laexo.tv">
+            <a className="linkImg" target={"_blank"} href="https://laexo.tv">
               <Image
                 className="gridImg "
                 src="/../public/img/Laexo.png"
@@ -134,15 +165,42 @@ export default function PageInfo() {
               ></Image>
               <div className="grid-overlay"></div>
               <div className="grid-text">
-                <h1 className="text-xl font-medium tracking-wider pb-3">Laexo.tv</h1> <p className="tracking-wider">Suis les Lives et événements de ton streamer Twitch sur son site vitrine.</p> 
+                <h1 className="text-xl font-medium tracking-wider pb-3">
+                  Laexo.tv
+                </h1>{" "}
+                <p className="tracking-wider">
+                  Suis les Lives et événements de ton streamer Twitch sur son
+                  site vitrine.
+                </p>
               </div>
             </a>
-
-
           </div>
         </div>
       </section>
 
+      <section id="contact" className="content mt-auto mb-44">
+        <h1 className="flex title blueText pl-8 text-6xl mb-8">
+          [ <p className="text-white text-3xl m-auto px-5">Contact me</p>]
+        </h1>
+        <div className="flex flex-col m-auto w-full">
+          <p className="text-center text-3xl opacity-70">
+            Si vouc voulez me contacter c'est juste ici !
+          </p>
+          <br />
+          <p className="text-center text-2xl ">
+            Je suis actuellement a la <span>recherche</span> d'un <span>stage</span> de <span>2 a 4 mois</span>
+          </p>
+          <button className="btn m-auto mt-8">
+            <a
+              className="text-center text-2xl"
+              href={"mailto:julienmv02@gmail.com"}
+              target={"_blank"}
+            >
+              Salut
+            </a>
+          </button>
+        </div>
+      </section>
     </main>
   );
 }
