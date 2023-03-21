@@ -1,8 +1,8 @@
 import "./pageInfo.css";
 import Image from "next/image";
 
-
 export default function PageInfo() {
+
   return (
     <main className="px-12 md:px-28 xl:px-32 max-2xl:px-0">
       <section className="content text-center mb-28">
@@ -82,7 +82,7 @@ export default function PageInfo() {
 
         <div className="pl-28 pt-5 w-full">
           <div className="grid grid-cols-3 grid-flow-row gap-x-4 gap-y-10">
-            <a className="linkImg" href="#">
+            <a className="linkImg"  target={"_blank"} href="https://minitsonga.itch.io/floupy-flap">
               <Image
                 className="gridImg"
                 src="/../public/img/FloupyFlap.png"
@@ -92,11 +92,11 @@ export default function PageInfo() {
               ></Image>
               <div className="grid-overlay"></div>
               <div className="grid-text">
-                <h1 className="text-xl font-medium tracking-wider pb-3">FlouppyFlap</h1><p className="tracking-wider">Évite les tuyaux et parcours la plus grande distance.</p> 
+                <h1 className="text-xl font-medium tracking-wider pb-3">FloupyFlap</h1><p className="tracking-wider">Évite les tuyaux et parcours la plus grande distance.</p> 
               </div>
             </a>
 
-            <a className="linkImg" href="#">
+            <a className="linkImg" target={"_blank"} href="https://minitsonga.itch.io/protect">
               <Image
                 className="gridImg"
                 src="/../public/img/Protect.png"
@@ -110,7 +110,7 @@ export default function PageInfo() {
               </div>
             </a>
 
-            <a className="linkImg" href="#">
+            <a className="linkImg"  target={"_blank"} href="https://minitsonga.itch.io/fusycal">
               <Image
                 className="gridImg"
                 src="/../public/img/Fusycal.png"
@@ -124,7 +124,7 @@ export default function PageInfo() {
               </div>
             </a>
 
-            <a className="linkImg" href="#">
+            <a className="linkImg"  target={"_blank"} href="https://laexo.tv">
               <Image
                 className="gridImg "
                 src="/../public/img/Laexo.png"
@@ -142,6 +142,7 @@ export default function PageInfo() {
           </div>
         </div>
       </section>
+
     </main>
   );
 }
