@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function PageInfo() {
   return (
     <main className="px-12 md:px-28 xl:px-32 max-2xl:px-0">
-      <section className="content text-center mb-28">
+      <section className="content text-center mb-44">
         <h1 className="blueText text-8xl mb-4">Julien Vandamme</h1>
         <p className="pl-20 pr-24 text-5xl opacity-70 mb-5">
           Passioné par le développement de jeux vidéo et par le web
@@ -78,7 +78,7 @@ export default function PageInfo() {
         </div>
       </section> */}
 
-      <section id="projets" className="content mt-auto mb-44">
+      <section id="projets" className="content mt-auto pt-40 mb-44">
         <h1 className="flex title blueText pl-8 text-6xl mb-8">
           [ <p className="text-white text-3xl m-auto px-5">Mes projets</p>]
         </h1>
@@ -188,13 +188,17 @@ export default function PageInfo() {
           </p>
           <br />
           <p className="text-center text-2xl ">
-            Je suis actuellement a la <span>recherche</span> d'un <span>stage</span> de <span>2 a 4 mois</span>
+            Je suis actuellement a la{" "}
+            <strong className="blueText font-normal">
+              recherche
+            </strong>{" "}
+            d'un <strong className="blueText font-normal">stage</strong> de{" "}
+            <strong className="blueText font-normal">2 a 4 mois</strong>
           </p>
-          <button className="btn m-auto mt-8">
+          <button className="btn m-auto mt-24">
             <a
               className="text-center text-2xl"
               href={"mailto:julienmv02@gmail.com"}
-              target={"_blank"}
             >
               Salut
             </a>

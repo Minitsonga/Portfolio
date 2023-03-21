@@ -11,15 +11,6 @@
     @apply text-bluey-snd
 }
 
-.blueLink {
-    color: var(--secondBluey);
-}
-
-.blueLink:hover {
-    color: var(--secondBluey);
-    text-decoration: underline var(--secondBluey);
-    text-decoration-thickness: 1px;
-}
 
 p>span {
     @apply text-bluey-snd hover:decoration-bluey-snd hover:decoration-1 hover:underline
