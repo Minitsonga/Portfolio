@@ -1,10 +1,11 @@
 import "./pageInfo.css";
 import Image from "next/image";
+import 'animate.css';
 
 export default function PageInfo() {
   return (
     <main className="px-12 md:px-28 xl:px-32 max-2xl:px-0">
-      <section className="content text-center mb-44">
+      <section className="animate__animated animate__fadeInUp content text-center mb-44">
         <h1 className="blueText text-8xl mb-4">Julien Vandamme</h1>
         <p className="pl-20 pr-24 text-5xl opacity-70 mb-5">
           Passioné par le développement de jeux vidéo et par le web
@@ -26,7 +27,7 @@ export default function PageInfo() {
 
       <div id="about" ></div>
 
-      <section id="about" className="content mt-44 mb-44 p-y-24">
+      <section id="about" className="animate__animated animate__fadeInUp content mt-44 mb-44 p-y-24">
         <h1 className="flex title blueText pl-8 text-6xl mb-8">
           [ <p className="text-white text-3xl m-auto px-5">About me</p>]
         </h1>
@@ -80,7 +81,7 @@ export default function PageInfo() {
         </div>
       </section> */}
 
-      <section id="projets" className="content mt-auto mb-44">
+      <section id="projets" className="animate__animated animate__fadeInUp content mt-auto mb-44">
         <h1 className="flex title blueText pl-8 text-6xl mb-8">
           [ <p className="text-white text-3xl m-auto px-5">Mes projets</p>]
         </h1>
@@ -180,7 +181,7 @@ export default function PageInfo() {
         </div>
       </section>
 
-      <section id="contact" className="content mt-auto mb-44">
+      <section id="contact" className="animate__animated animate__fadeInUp content mt-auto mb-44">
         <h1 className="flex title blueText pl-8 text-6xl mb-8">
           [ <p className="text-white text-3xl m-auto px-5">Contact me</p>]
         </h1>
