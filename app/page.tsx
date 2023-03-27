@@ -8,29 +8,19 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
 const mainSecAnim = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+  visible: { opacity: 1, scale: 1, transition: {duration: 0.5} },
   hidden: { opacity: 0, scale: 0 },
 };
 
 const sectionVariant = {
-  visible: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.5 } },
-  hidden: { opacity: 0, scale: 0, y: 100 },
+  visible: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.5, delay: 0.5  } },
+  hidden: { opacity: 0, y: 50 },
 };
 const MainSection = () => {
   const control = useAnimation();
-  const [ref, inView] = useInView();
-
-  useEffect(() => {
-    if (inView) {
-      control.start("visible");
-    } else {
-      // control.start("hidden");
-    }
-  }, [control, inView]);
 
   return (
     <motion.div
-      ref={ref}
       variants={mainSecAnim}
       initial="hidden"
       animate={control}
@@ -59,21 +49,13 @@ const MainSection = () => {
 
 const About = () => {
   const control = useAnimation();
-  const [ref, inView] = useInView();
-
-  useEffect(() => {
-    if (inView) {
-      control.start("visible");
-    } else {
-      // control.start("hidden");
-    }
-  }, [control, inView]);
 
   return (
     <motion.div
-      ref={ref}
       variants={sectionVariant}
       initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true}}
       animate={control}
       id="about"
       className="content mt-44 mb-44 p-y-24"
@@ -108,21 +90,13 @@ const About = () => {
 
 const Projects = () => {
   const control = useAnimation();
-  const [ref, inView] = useInView();
-
-  useEffect(() => {
-    if (inView) {
-      control.start("visible");
-    } else {
-      // control.start("hidden");
-    }
-  }, [control, inView]);
 
   return (
     <motion.div
-      ref={ref}
       variants={sectionVariant}
       initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true}}
       animate={control}
       id="projets"
       className="content mt-auto mb-44"
@@ -230,21 +204,13 @@ const Projects = () => {
 
 const Contact = () => {
   const control = useAnimation();
-  const [ref, inView] = useInView();
-
-  useEffect(() => {
-    if (inView) {
-      control.start("visible");
-    } else {
-      // control.start("hidden");
-    }
-  }, [control, inView]);
-
+  
   return (
     <motion.div
-      ref={ref}
       variants={sectionVariant}
       initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true}}
       animate={control}
       id="contact"
       className="content mt-auto mb-44"
