@@ -8,12 +8,17 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
 const mainSecAnim = {
-  visible: { opacity: 1, scale: 1, transition: {duration: 0.5} },
+  visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
   hidden: { opacity: 0, scale: 0 },
 };
 
 const sectionVariant = {
-  visible: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.5, delay: 0.5  } },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    transition: { duration: 0.5, delay: 0.5 },
+  },
   hidden: { opacity: 0, y: 50 },
 };
 const MainSection = () => {
@@ -23,6 +28,8 @@ const MainSection = () => {
     <motion.div
       variants={mainSecAnim}
       initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
       animate={control}
       className="content text-center mb-44"
     >
@@ -55,7 +62,7 @@ const About = () => {
       variants={sectionVariant}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true}}
+      viewport={{ once: true }}
       animate={control}
       id="about"
       className="content mt-44 mb-44 p-y-24"
@@ -96,7 +103,7 @@ const Projects = () => {
       variants={sectionVariant}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true}}
+      viewport={{ once: true }}
       animate={control}
       id="projets"
       className="content mt-auto mb-44"
@@ -204,13 +211,13 @@ const Projects = () => {
 
 const Contact = () => {
   const control = useAnimation();
-  
+
   return (
     <motion.div
       variants={sectionVariant}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true}}
+      viewport={{ once: true }}
       animate={control}
       id="contact"
       className="content mt-auto mb-44"
@@ -245,7 +252,9 @@ export default function PageInfo() {
     <main className="px-12 md:px-28 xl:px-32 max-2xl:px-0">
       <MainSection />
 
-      <About />
+      <div className="anchor"/>
+        <About />
+    
 
       {/* <section id="jobs" className="content mt-14">
         <h1 className="flex title blueText pl-8 text-6xl mb-8">

@@ -20,6 +20,13 @@
     @apply text-bluey-snd bg-transparent border-2 border-bluey-snd rounded h-14 w-44 px-4 mt-2.5 mb-6 cursor-pointer hover:bg-bluey-snd/25
 }
 
+.anchor {
+    display: block;
+    position: relative;
+    top: -250px;
+    visibility: hidden;
+}
+
 .title::before {
     content: "";
     display: block;
