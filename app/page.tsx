@@ -3,12 +3,12 @@
 import "./pageInfo.css";
 import Image from "next/image";
 
-import { motion, useAnimation } from "framer-motion";
+import { motion, useAnimation, useScroll } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
+import { useRef } from "react";
 
 const mainSecAnim = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } },
   hidden: { opacity: 0, scale: 0 },
 };
 
@@ -17,9 +17,9 @@ const sectionVariant = {
     opacity: 1,
     scale: 1,
     y: 0,
-    transition: { duration: 0.5, delay: 0.5 },
+    transition: { duration: 0.3, delay: 0.3 },
   },
-  hidden: { opacity: 0, y: 50 },
+  hidden: { opacity: 0, y: 100 },
 };
 const MainSection = () => {
   const control = useAnimation();
@@ -31,7 +31,7 @@ const MainSection = () => {
       whileInView="visible"
       viewport={{ once: true }}
       animate={control}
-      className="content text-center mb-44"
+      className="content mainSection text-center mb-44"
     >
       <h1 className="blueText text-8xl mb-4">Julien Vandamme</h1>
       <p className="pl-20 pr-24 text-5xl opacity-70 mb-5">
@@ -62,16 +62,16 @@ const About = () => {
       variants={sectionVariant}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true }}
+      viewport={{amount: 0.5 }}
       animate={control}
       id="about"
-      className="content mt-44 mb-44 p-y-24"
+      className="content scroll-mt-72 sections mt-64 mb-72 p-y-24"
     >
       <h1 className="flex title blueText pl-8 text-6xl mb-8">
         [ <p className="text-white text-3xl m-auto px-5">About me</p>]
       </h1>
 
-      <div className="flex">
+      <div className="flex snap-center">
         <p className="ml-26 pr-20 pl-20 w-2/3 text-xl mb-5">
           Salut ! Je m'appelle Julien Vandamme et je suis actuellement étudiant
           en informatique. Je suis passionné par les jeux vidéo depuis mes 12
@@ -103,16 +103,16 @@ const Projects = () => {
       variants={sectionVariant}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true }}
+      viewport={{ amount: 0.3}}
       animate={control}
       id="projets"
-      className="content mt-auto mb-44"
+      className="content scroll-mt-10 sections mt-64 mb-44"
     >
       <h1 className="flex title blueText pl-8 text-6xl mb-8">
         [ <p className="text-white text-3xl m-auto px-5">Mes projets</p>]
       </h1>
 
-      <div className="pl-28 pt-5 w-full">
+      <div className="snap-center pl-28 pt-5 w-full">
         <div className="grid grid-cols-3 grid-flow-row gap-x-4 gap-y-10">
           <a
             className="linkImg"
@@ -217,29 +217,29 @@ const Contact = () => {
       variants={sectionVariant}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true }}
+      viewport={{amount: 0.3}}
       animate={control}
       id="contact"
-      className="content mt-auto mb-44"
+      className="content scroll-mt-64 sections mt-auto mt-64 mb-44"
     >
       <h1 className="flex title blueText pl-8 text-6xl mb-8">
         [ <p className="text-white text-3xl m-auto px-5">Contact me</p>]
       </h1>
       <div className="flex flex-col m-auto w-full">
-        <p className="text-center text-3xl opacity-70">
-          Si vouc voulez me contacter c'est juste ici !
+        <p className="text-center text-3xl opacity-80">
+          Si vous voulez me contacter c'est juste ici !
         </p>
         <br />
         <p className="text-center text-2xl ">
-          Je suis actuellement a la <span>recherche</span> d'un{" "}
-          <span>stage</span> de <span>2 a 4 mois</span>
+          Je suis actuellement a la <span>recherche</span> d'une{" "}
+          <span>alternance</span> de <span>24 mois</span> pour septembre 2023
         </p>
         <button className="btn m-auto mt-24">
           <a
             className="text-center text-2xl"
             href={"mailto:julienmv02@gmail.com"}
           >
-            Salut
+            Me contacter
           </a>
         </button>
       </div>
@@ -252,9 +252,7 @@ export default function PageInfo() {
     <main className="px-12 md:px-28 xl:px-32 max-2xl:px-0">
       <MainSection />
 
-      <div className="anchor"/>
-        <About />
-    
+      <About />
 
       {/* <section id="jobs" className="content mt-14">
         <h1 className="flex title blueText pl-8 text-6xl mb-8">
