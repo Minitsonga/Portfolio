@@ -127,8 +127,7 @@ const Projects = () => {
           <div className="grid grid-cols-3 grid-flow-row gap-x-4 gap-y-10">
             <a
               className="linkImg"
-              target={"_blank"}
-              href="https://minitsonga.itch.io/floupy-flap"
+              href="/projets/floupy-flap"
             >
               <Image
                 className="gridImg"
@@ -148,8 +147,7 @@ const Projects = () => {
 
             <a
               className="linkImg"
-              target={"_blank"}
-              href="https://minitsonga.itch.io/protect"
+              href="/projets/protect"
             >
               <Image
                 className="gridImg"
@@ -259,7 +257,7 @@ const Contact = () => {
 
 export default function PageInfo() {
   return (
-    <main className="px-12 md:px-28 xl:px-32 max-2xl:px-0">
+    <div className="holder">
       <MainSection />
 
       <About />
@@ -293,6 +291,6 @@ export default function PageInfo() {
 
       <Projects />
       <Contact />
-    </main>
+    </div>
   );
 }

@@ -50,15 +50,21 @@ main {
 
 }
 
+.holder {
+    margin-left: 100px;
+    margin-right: 200px;
+}
+
 .mainSection {
     margin-bottom: 180px;
     margin-left: 100px;
+    padding-left: 100px;
     margin-right: 100px;
     padding: 50px 0px;
 }
 
 .sections {
-    margin-left: 100px;
+    margin-left: 50px;
     margin-right: 100px;
     padding: 100px 0px;
 }
