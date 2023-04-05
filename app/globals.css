@@ -46,6 +46,7 @@ main {
     max-width: 1600px;
     min-height: 100vh;
     padding: 150px 0px;
+    letter-spacing: 0.05em;
 
 }
 

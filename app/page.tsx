@@ -37,13 +37,13 @@ const MainSection = () => {
       <p className="pl-20 pr-24 text-5xl opacity-70 mb-5">
         Passioné par le développement de jeux vidéo et par le web
       </p>
-      <p className="text-2xl px-40 mx-32">
+      <p className="text-xl px-40 mx-32">
         Étudiant en informatique. J'adore coder, créer des jeux, apprendre de
         nouvelles choses.
       </p>
       <button className="btn m-auto mt-8">
         <a
-          className="text-center text-xl"
+          className="text-center text-lg"
           href={"/resume.pdf"}
           target={"_blank"}
         >
@@ -62,33 +62,39 @@ const About = () => {
       variants={sectionVariant}
       initial="hidden"
       whileInView="visible"
-      viewport={{amount: 0.5 }}
+      viewport={{ amount: 0.5 }}
       animate={control}
       id="about"
       className="content scroll-mt-72 sections mt-64 mb-72 p-y-24"
     >
-      <h1 className="flex title blueText pl-8 text-6xl mb-8">
-        [ <p className="text-white text-3xl m-auto px-5">About me</p>]
-      </h1>
+      <div className="flex flex-col">
+        <h1 className="flex title blueText pl-8 text-5xl mb-8">
+          [
+          <p className="text-white text-center text-2xl w-3/12 m-auto px-5">
+            About me
+          </p>
+          ]
+        </h1>
 
-      <div className="flex snap-center">
-        <p className="ml-26 pr-20 pl-20 w-2/3 text-xl mb-5">
-          Salut ! Je m'appelle Julien Vandamme et je suis actuellement étudiant
-          en informatique. Je suis passionné par les jeux vidéo depuis mes 12
-          ans et il y a 3 ans, je me suis intéressé au monde du web. J'ai créé
-          plusieurs jeux et sites internet qui m'ont permis d'apprendre le{" "}
-          <span>C# sur Unity</span> et <span>Node.js</span>,{" "}
-          <span>Javascript</span>, <span>ReactJs</span>.
-        </p>
+        <div className="flex snap-center">
+          <p className="ml-26 pr-20 pl-20 w-2/3 text-lg mb-5">
+            Salut ! Je m'appelle Julien Vandamme et je suis actuellement
+            étudiant en informatique. Je suis passionné par les jeux vidéo
+            depuis mes 12 ans et il y a 3 ans, je me suis intéressé au monde du
+            web. J'ai créé plusieurs jeux et sites internet qui m'ont permis
+            d'apprendre le <span>C# sur Unity</span> et <span>Node.js</span>,{" "}
+            <span>Javascript</span>, <span>ReactJs</span>.
+          </p>
 
-        <div className="flex pr-20 m-auto">
-          <Image
-            className="meImg "
-            src="/../public/img/moi.jpg"
-            width={250}
-            height={200}
-            alt="Me"
-          ></Image>
+          <div className="flex pr-20 m-auto">
+            <Image
+              className="meImg "
+              src="/../public/img/moi.jpg"
+              width={250}
+              height={200}
+              alt="Me"
+            ></Image>
+          </div>
         </div>
       </div>
     </motion.div>
@@ -103,106 +109,104 @@ const Projects = () => {
       variants={sectionVariant}
       initial="hidden"
       whileInView="visible"
-      viewport={{ amount: 0.3}}
+      viewport={{ amount: 0.3 }}
       animate={control}
       id="projets"
       className="content scroll-mt-10 sections mt-64 mb-44"
     >
-      <h1 className="flex title blueText pl-8 text-6xl mb-8">
-        [ <p className="text-white text-3xl m-auto px-5">Mes projets</p>]
-      </h1>
+      <div className="flex flex-col">
+        <h1 className="flex title blueText pl-8 text-5xl mb-8">
+          [
+          <p className="text-white text-center text-2xl w-4/12 m-auto px-5">
+            Mes projets
+          </p>
+          ]
+        </h1>
 
-      <div className="snap-center pl-28 pt-5 w-full">
-        <div className="grid grid-cols-3 grid-flow-row gap-x-4 gap-y-10">
-          <a
-            className="linkImg"
-            target={"_blank"}
-            href="https://minitsonga.itch.io/floupy-flap"
-          >
-            <Image
-              className="gridImg"
-              src="/../public/img/FloupyFlap.png"
-              width={250}
-              height={200}
-              alt="floupyFlap"
-            ></Image>
-            <div className="grid-overlay"></div>
-            <div className="grid-text">
-              <h1 className="text-xl font-medium tracking-wider pb-3">
-                FloupyFlap
-              </h1>
-              <p className="tracking-wider">
-                Évite les tuyaux et parcours la plus grande distance.
-              </p>
-            </div>
-          </a>
+        <div className="snap-center pl-28 pt-5 w-full">
+          <div className="grid grid-cols-3 grid-flow-row gap-x-4 gap-y-10">
+            <a
+              className="linkImg"
+              target={"_blank"}
+              href="https://minitsonga.itch.io/floupy-flap"
+            >
+              <Image
+                className="gridImg"
+                src="/../public/img/FloupyFlap.png"
+                width={250}
+                height={200}
+                alt="floupyFlap"
+              ></Image>
+              <div className="grid-overlay"></div>
+              <div className="grid-text">
+                <h1 className="text-lg font-medium pb-3">FloupyFlap</h1>
+                <p className="">
+                  Évite les tuyaux et parcours la plus grande distance.
+                </p>
+              </div>
+            </a>
 
-          <a
-            className="linkImg"
-            target={"_blank"}
-            href="https://minitsonga.itch.io/protect"
-          >
-            <Image
-              className="gridImg"
-              src="/../public/img/Protect.png"
-              width={250}
-              height={200}
-              alt="protect"
-            ></Image>
-            <div className="grid-overlay"></div>
-            <div className="grid-text">
-              <h1 className="text-xl font-medium tracking-wider pb-3">
-                Protect
-              </h1>
-              <p className="tracking-wider">
-                Survie en esquivant les astéroïdes dans une simulation 2D dans
-                l'espace.
-              </p>
-            </div>
-          </a>
+            <a
+              className="linkImg"
+              target={"_blank"}
+              href="https://minitsonga.itch.io/protect"
+            >
+              <Image
+                className="gridImg"
+                src="/../public/img/Protect.png"
+                width={250}
+                height={200}
+                alt="protect"
+              ></Image>
+              <div className="grid-overlay"></div>
+              <div className="grid-text">
+                <h1 className="text-lg font-medium pb-3">Protect</h1>
+                <p className="">
+                  Survie en esquivant les astéroïdes dans une simulation 2D dans
+                  l'espace.
+                </p>
+              </div>
+            </a>
 
-          <a
-            className="linkImg"
-            target={"_blank"}
-            href="https://minitsonga.itch.io/fusycal"
-          >
-            <Image
-              className="gridImg"
-              src="/../public/img/Fusycal.png"
-              width={250}
-              height={200}
-              alt="fusycal"
-            ></Image>
-            <div className="grid-overlay"></div>
-            <div className="grid-text">
-              <h1 className="text-xl font-medium tracking-wider pb-3">
-                Fusycal
-              </h1>
-              <p className="tracking-wider">
-                Collecte des héros dans un jeu de cartes fantaisie.
-              </p>
-            </div>
-          </a>
+            <a
+              className="linkImg"
+              target={"_blank"}
+              href="https://minitsonga.itch.io/fusycal"
+            >
+              <Image
+                className="gridImg"
+                src="/../public/img/Fusycal.png"
+                width={250}
+                height={200}
+                alt="fusycal"
+              ></Image>
+              <div className="grid-overlay"></div>
+              <div className="grid-text">
+                <h1 className="text-lg font-medium pb-3">Fusycal</h1>
+                <p className="">
+                  Collecte des héros dans un jeu de cartes fantaisie.
+                </p>
+              </div>
+            </a>
 
-          <a className="linkImg" target={"_blank"} href="https://laexo.tv">
-            <Image
-              className="gridImg "
-              src="/../public/img/Laexo.png"
-              width={250}
-              height={200}
-              alt="Laexo"
-            ></Image>
-            <div className="grid-overlay"></div>
-            <div className="grid-text">
-              <h1 className="text-xl font-medium tracking-wider pb-3">
-                Laexo.tv
-              </h1>{" "}
-              <p className="tracking-wider">
-                Suis les Lives et événements de ton streamer Twitch sur son site
-                vitrine.
-              </p>
-            </div>
-          </a>
+            <a className="linkImg" target={"_blank"} href="https://laexo.tv">
+              <Image
+                className="gridImg "
+                src="/../public/img/Laexo.png"
+                width={250}
+                height={200}
+                alt="Laexo"
+              ></Image>
+              <div className="grid-overlay"></div>
+              <div className="grid-text">
+                <h1 className="text-lg font-medium pb-3">Laexo.tv</h1>{" "}
+                <p className="">
+                  Suis les Lives et événements de ton streamer Twitch sur son
+                  site vitrine.
+                </p>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </motion.div>
@@ -217,31 +221,37 @@ const Contact = () => {
       variants={sectionVariant}
       initial="hidden"
       whileInView="visible"
-      viewport={{amount: 0.3}}
+      viewport={{ amount: 0.3 }}
       animate={control}
       id="contact"
       className="content scroll-mt-64 sections mt-auto mt-64 mb-44"
     >
-      <h1 className="flex title blueText pl-8 text-6xl mb-8">
-        [ <p className="text-white text-3xl m-auto px-5">Contact me</p>]
-      </h1>
-      <div className="flex flex-col m-auto w-full">
-        <p className="text-center text-3xl opacity-80">
-          Si vous voulez me contacter c'est juste ici !
-        </p>
-        <br />
-        <p className="text-center text-2xl ">
-          Je suis actuellement a la <span>recherche</span> d'une{" "}
-          <span>alternance</span> de <span>24 mois</span> pour septembre 2023
-        </p>
-        <button className="btn m-auto mt-24">
-          <a
-            className="text-center text-2xl"
-            href={"mailto:julienmv02@gmail.com"}
-          >
-            Me contacter
-          </a>
-        </button>
+      <div className="flex flex-col">
+        <h1 className="flex title blueText pl-8 text-5xl mb-8">
+          [
+          <p className="text-white text-center text-2xl w-4/12 m-auto px-5">
+            Contact me
+          </p>
+          ]
+        </h1>
+        <div className="flex flex-col m-auto w-full">
+          <p className="text-center text-2xl opacity-80">
+            Si vous voulez me contacter c'est juste ici !
+          </p>
+          <br />
+          <p className="text-center text-xl ">
+            Je suis actuellement a la <span>recherche</span> d'une{" "}
+            <span>alternance</span> de <span>24 mois</span> pour septembre 2023
+          </p>
+          <button className="btn m-auto mt-24">
+            <a
+              className="text-center text-xl"
+              href={"mailto:julienmv02@gmail.com"}
+            >
+              Me contacter
+            </a>
+          </button>
+        </div>
       </div>
     </motion.div>
   );
@@ -255,7 +265,7 @@ export default function PageInfo() {
       <About />
 
       {/* <section id="jobs" className="content mt-14">
-        <h1 className="flex title blueText pl-8 text-6xl mb-8">
+        <h1 className="flex title blueText pl-8 text-5xl mb-8">
           [ <p className="text-white text-4xl m-auto px-5">Experiences</p>]
         </h1>
 

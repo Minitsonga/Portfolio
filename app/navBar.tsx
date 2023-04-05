@@ -5,7 +5,7 @@ export default function GlobalNavBar() {
     <div className={navBar.holder}>
       <ul className="mt-3.5">
         <li>
-          <a href="#about">
+          <a href="/#about">
             <p className="r">[</p>
             <div className={navBar.textLink}>About me</div>
             <p className="r">]</p>
@@ -19,14 +19,14 @@ export default function GlobalNavBar() {
           </a>
         </li> */}
         <li>
-          <a href="#projets">
+          <a href="/#projets">
             <p className="r">[</p>
             <div className={navBar.textLink}>Projets</div>
             <p className="r">]</p>
           </a>
         </li>
         <li>
-          <a href="#contact">
+          <a href="/#contact">
             <p className="r">[</p>
             <div className={navBar.textLink}>Contact</div>
             <p className="r">]</p>
