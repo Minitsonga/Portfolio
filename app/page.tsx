@@ -168,8 +168,7 @@ const Projects = () => {
 
             <a
               className="linkImg"
-              target={"_blank"}
-              href="https://minitsonga.itch.io/fusycal"
+              href="/projets/fusycal"
             >
               <Image
                 className="gridImg"
@@ -187,7 +186,7 @@ const Projects = () => {
               </div>
             </a>
 
-            <a className="linkImg" target={"_blank"} href="https://laexo.tv">
+            <a className="linkImg" href="/projets/laexotv">
               <Image
                 className="gridImg "
                 src="/../public/img/Laexo.png"

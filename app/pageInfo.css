@@ -8,7 +8,7 @@
 }
 
 
-.blueText, p>span {
+.blueText, p span {
     @apply text-bluey-snd
 }
 

@@ -1,72 +1,95 @@
 import "../../pageInfo.css";
 
 export default function laexotvPage() {
-    return (
-      <div className="pl-24 pr-52">
+  return (
+    <div className="holder">
+      <div className="ml-20 mr-14">
         <h1 className="blueText text-8xl flex pb-10 mb-8">
-          <p className="m-auto">Floupy Flap</p>
+          <p className="m-auto">Laexo.tv</p>
         </h1>
-        <h1 className="text-2xl flex mb-10">
-          <p className="m-auto text-center mx-20 px-32">
-            Voici mon premier jeu. Il avait pour but de m'entrainer à faire un
-            prototype de jeu rapide et fonctionnel
+        <h1 className="text-2xl justify-center flex mb-10">
+          <p className="m-auto text-center mx-20 ">
+            Ce projet est un site internet pour un streamer sur Twitch.
           </p>
         </h1>
-  
+
         <div className="flex flex-col mt-20">
           <h1 className="flex title blueText pl-8 text-5xl mb-8">
-            [<p className="text-white text-center text-3xl px-5">Description</p>]
+            [
+            <p className="text-white m-auto text-center text-3xl px-5">
+              Description
+            </p>
+            ]
           </h1>
-  
-          <p className="ml-26 pr-24 pl-36 text-lg m-auto mb-5">
-            Floupy Flap est un Flappy bird like dont le but est de parcourir la
-            plus grande distance en esquivant des tuyaux.
+
+          <p className="mx-20 text-lg mb-5">
+            Ce site a pour but de permettre a ces viewers (les personnes qui le
+            regarde), d'être au courant des actualités du streamer.
             <br />
             <br />
-            Il y a deux modes de jeux ; un mode sans fin où le but est de faire le
-            plus grand score et un mode avec des niveaux, dont la difficulté
-            augment au fur et à mesure.
-            <br />
-            Un système d'économie a aussi été implémenté. Des pièces peuvent être
-            gagnées en jouant, permettant, dans le shop, d'acheter différents
-            skins.
+            On peut, sur la page de garde, <span>regarder</span> le live sur
+            Twitch sans avoir besoin d'aller sur la platforme de streaming.
             <br />
             <br />
-            Ce projet a été fait en <span>2 semaines et demi</span> sur{" "}
-            <span>Unity</span>.
+            Il est aussi possible de voir le <span>planning</span> de stream de
+            la semaine et aussi les <span>évènements</span> qu'il organise.
+            <br />
+            <br />
+            Je me suis occupé aussi de la mise en ligne et de la configuration
+            du <span>VPS</span> pour pouvoir publier le site et le rendre
+            accessible par tous.
+            <br />
+            J'ai travaillé avec différentes <span>API</span> comme celle de
+            <span>Twitch</span> ou encore celle de{" "}
+            <a href="https://wizebot.tv" target={"_blank"}>
+              <span className="blueLink">WizeBot</span>
+            </a>
+            <br />
+            <br />
+            Ce projet a été fait en environ <span>3 mois</span> avec{" "}
+            <span>Node.js</span> et <span>express.js</span>.
           </p>
         </div>
-  
+
         <div className="flex flex-col mt-20">
           <h1 className="flex title blueText pl-8 text-5xl mb-8">
-            [<p className="text-white text-center text-3xl px-5">Apport</p>]
+            [
+            <p className="text-white m-auto text-center text-3xl px-5">
+              Apport
+            </p>
+            ]
           </h1>
-  
-          <div className="ml-26 pr-24 pl-36 text-lg m-auto mb-5">
-            <p className="text-xl">Grâce à ce jeu, j'ai pu apprendre différentes choses sur Unity comme :</p>
+
+          <div className="mx-20 text-lg mb-5">
+            <p className="text-xl">
+              Ce projet m'a appris d'<span>approfondir</span> et d'
+              <span>apprendre</span> des choses comme:
+            </p>
             <li>
-                La création de fichier de <span className="blueText">sauvegarde</span> avec
-                l'utilisation du <span className="blueText">BinaryFormatter</span>.
+              Le suivi d'un <span className="blueText">cahier des charges</span>{" "}
+              et les envies d'une personne.
             </li>
             <li>
-                La création de skins achetables et d'un inventaire.
+              La gestion du <span className="blueText">back-end</span> et{" "}
+              <span className="blueText">front-end</span>
             </li>
             <li>
-                L'implémentation de niveaux avec des difficultés croissantes.
+              L'utilisation d'<span className="blueText">API</span> et de{" "}
+              <span className="blueText">base de données</span>
+            </li>
+            <li>
+              Suivre et s'approprier une{" "}
+              <span className="blueText">direction artistique</span>.
             </li>
           </div>
-  
+
           <button className="btn m-auto mt-10 px-10">
-            <a
-              className="text-center m-auto text-2xl"
-              href="https://minitsonga.itch.io/floupy-flap"
-            >
-              Jouer
+            <a className="text-center m-auto text-2xl" href="https://laexo.tv">
+              Visiter
             </a>
           </button>
         </div>
-  
       </div>
-    );
-  }
-  
+    </div>
+  );
+}
