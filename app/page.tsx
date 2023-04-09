@@ -131,7 +131,7 @@ const Projects = () => {
             >
               <Image
                 className="gridImg"
-                src="/../public/img/FloupyFlap.png"
+                src="/img/FloupyFlap.png"
                 width={250}
                 height={200}
                 alt="floupyFlap"
@@ -151,7 +151,7 @@ const Projects = () => {
             >
               <Image
                 className="gridImg"
-                src="/../public/img/Protect.png"
+                src="/img/Protect.png"
                 width={250}
                 height={200}
                 alt="protect"
@@ -172,7 +172,7 @@ const Projects = () => {
             >
               <Image
                 className="gridImg"
-                src="/../public/img/Fusycal.png"
+                src="/img/Fusycal.png"
                 width={250}
                 height={200}
                 alt="fusycal"
@@ -189,7 +189,7 @@ const Projects = () => {
             <a className="linkImg" href="/projets/laexotv">
               <Image
                 className="gridImg "
-                src="/../public/img/Laexo.png"
+                src="/img/Laexo.png"
                 width={250}
                 height={200}
                 alt="Laexo"
