@@ -89,7 +89,7 @@ const About = () => {
           <div className="flex pl-10 xl:pr-20  m-auto">
             <Image
               className="meImg"
-              src="/../public/img/moi.jpg"
+              src="/img/moi.jpg"
               width={250}
               height={200}
               alt="Me"
