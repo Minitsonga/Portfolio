@@ -3,27 +3,27 @@ import "../../pageInfo.css";
 export default function fusycalPage() {
   return (
     <div className="holder">
-      <div className="ml-20 mr-14">
-        <h1 className="blueText text-8xl flex pb-10 mb-8">
+      <div className="ml-10 mr-8 xl:ml-20 xl:mr-14 lg:ml-14 mr-10">
+        <h1 className="blueText text-5xl flex pb-5 lg:text-7xl xl:text-8xl xl:mb-8">
           <p className="m-auto">Fusycal</p>
         </h1>
-        <h1 className="text-2xl justify-center flex mb-10">
-          <p className="m-auto text-center mx-20">
+        <h1 className="xl:text-2xl lg:text-xl text-md justify-center flex mb-10">
+          <p className="m-auto text-center mx-10 xl:mx-20">
             Ce jeu est le plus gros projet que j'ai pu finaliser. Je me suis
             inspirer de tous les jeux de carte connu.
           </p>
         </h1>
 
         <div className="flex flex-col mt-20">
-          <h1 className="flex title blueText pl-8 text-5xl mb-8">
+          <h1 className="flex title blueText pl-8 text-3xl xl:text-5xl lg:text-4xl mb-8">
             [
-            <p className="text-white m-auto text-center text-3xl px-5">
+            <p className="text-white m-auto text-center text-xl xl:text-3xl lg:text-xl px-2 xl:px-4">
               Description
             </p>
             ]
           </h1>
 
-          <p className="mx-20 text-lg mb-5">
+          <p className="mx-10 text-sm mb-5 xl:mx-20 xl:text-lg lg:text-md lg:mx-16">
             Fusycal est un jeu de carte avec des héros à améliorer, et plein de
             skin a collectionner.
             <br />
@@ -51,16 +51,16 @@ export default function fusycalPage() {
         </div>
 
         <div className="flex flex-col mt-20">
-          <h1 className="flex title blueText pl-8 text-5xl mb-8">
+          <h1 className="flex title blueText pl-8 text-3xl xl:text-5xl lg:text-4xl mb-8">
             [
-            <p className="text-white m-auto text-center text-3xl px-5">
+            <p className="text-white m-auto text-center text-xl xl:text-3xl lg:text-xl px-2 xl:px-4">
               Apport
             </p>
             ]
           </h1>
 
-          <div className="mx-20 text-lg mb-5">
-            <p className="text-xl">
+          <div className="mx-10 text-sm mb-5 xl:mx-20 xl:text-lg lg:text-md lg:mx-16">
+            <p className="text-md xl:text-xl lg:text-lg">
               Ce jeu m'a permis de m'entraîner sur beaucoup de choses comme :
             </p>
             <li>
@@ -80,9 +80,10 @@ export default function fusycalPage() {
             </li>
           </div>
 
-          <button className="btn m-auto mt-10 px-10">
+          <button className="btn m-auto mt-10 px-5 xl:px-10">
             <a
-              className="text-center m-auto text-2xl"
+              className="text-center m-auto text-lg xl:text-2xl lg:text-xl"
+              target={"_blank"}
               href="https://minitsonga.itch.io/fusycal"
             >
               Jouer

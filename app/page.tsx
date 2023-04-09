@@ -33,17 +33,17 @@ const MainSection = () => {
       animate={control}
       className="content mainSection text-center mb-44"
     >
-      <h1 className="blueText text-8xl mb-4">Julien Vandamme</h1>
-      <p className="pl-20 pr-24 text-5xl opacity-70 mb-5">
+      <h1 className="blueText text-4xl 2xl:text-8xl xl:text-7xl lg:text-5xl mb-4">Julien Vandamme</h1>
+      <p className="lg:pl-12 lg:pr-16  2xl:pl-20 2xl:pr-24 text-xl 2xl:text-5xl xl:text-4xl lg:text-2xl opacity-70 mb-5">
         Passioné par le développement de jeux vidéo et par le web
       </p>
-      <p className="text-xl px-40 mx-32">
+      <p className="text-md lg:text-lg xl:text-xl 2xl:text-2xl xl:px-32 xl:mx-32 lg:px-20 lg:mx-26">
         Étudiant en informatique. J'adore coder, créer des jeux, apprendre de
         nouvelles choses.
       </p>
       <button className="btn m-auto mt-8">
         <a
-          className="text-center text-lg"
+          className="text-center 2xl:text-3xl xl:text-2xl lg:text-xl text-md"
           href={"/CV_ALTERNANCE.pdf"}
           target={"_blank"}
         >
@@ -70,14 +70,14 @@ const About = () => {
       <div className="flex flex-col">
         <h1 className="flex title blueText pl-8 text-5xl mb-8">
           [
-          <p className="text-white text-center text-2xl w-3/12 m-auto px-5">
+          <p className="text-white text-center text-xl xl:text-3xl 2xl:w-3/12 xl:w-4/12 lg:w-5/12 w-8/12 m-auto">
             About me
           </p>
           ]
         </h1>
 
-        <div className="flex snap-center">
-          <p className="ml-26 pr-20 pl-20 w-2/3 text-lg mb-5">
+        <div className="flex flex-col xl:flex-row">
+          <p className="text-md pl-16 lg:pl-20 xl:ml-26 xl:pr-20 xl:w-2/3 xl:text-lg xl:mb-5">
             Salut ! Je m'appelle Julien Vandamme et je suis actuellement
             étudiant en informatique. Je suis passionné par les jeux vidéo
             depuis mes 12 ans et il y a 3 ans, je me suis intéressé au monde du
@@ -86,9 +86,9 @@ const About = () => {
             <span>Javascript</span>, <span>ReactJs</span>.
           </p>
 
-          <div className="flex pr-20 m-auto">
+          <div className="flex pl-10 xl:pr-20  m-auto">
             <Image
-              className="meImg "
+              className="meImg"
               src="/../public/img/moi.jpg"
               width={250}
               height={200}
@@ -114,17 +114,17 @@ const Projects = () => {
       id="projets"
       className="content scroll-mt-10 sections mt-64 mb-44"
     >
-      <div className="flex flex-col">
+      <div className="flex w-full flex-col">
         <h1 className="flex title blueText pl-8 text-5xl mb-8">
           [
-          <p className="text-white text-center text-2xl w-4/12 m-auto px-5">
+          <p className="text-white text-center text-xl xl:text-3xl 2xl:w-4/12 xl:w-4/12 lg:w-5/12 w-11/12 m-auto">
             Mes projets
           </p>
           ]
         </h1>
 
-        <div className="snap-center pl-28 pt-5 w-full">
-          <div className="grid grid-cols-3 grid-flow-row gap-x-4 gap-y-10">
+        <div className="m-auto pl-8 pt-5 w-4/5">
+          <div className="grid grid-rows lg:grid-cols-3 grid-flow-row gap-x-4 gap-y-10">
             <a
               className="linkImg"
               href="/projets/floupy-flap"
@@ -223,26 +223,26 @@ const Contact = () => {
       id="contact"
       className="content scroll-mt-64 sections mt-auto mt-64 mb-44"
     >
-      <div className="flex flex-col">
+      <div className="flex w-full flex-col">
         <h1 className="flex title blueText pl-8 text-5xl mb-8">
           [
-          <p className="text-white text-center text-2xl w-4/12 m-auto px-5">
+          <p className="text-white text-center text-xl xl:text-3xl 2xl:w-4/12 xl:w-4/12 lg:w-5/12 w-11/12 m-auto">
             Contact me
           </p>
           ]
         </h1>
-        <div className="flex flex-col m-auto w-full">
-          <p className="text-center text-2xl opacity-80">
+        <div className="flex flex-col m-auto w-3/4">
+          <p className="text-center text-md lg:text-lg xl:text-xl 2xl:text-2xl opacity-80">
             Si vous voulez me contacter c'est juste ici !
           </p>
           <br />
-          <p className="text-center text-xl ">
+          <p className="text-center text-md xl:text-lg 2xl:text-xl ">
             Je suis actuellement a la <span>recherche</span> d'une{" "}
-            <span>alternance</span> de <span>24 mois</span> pour septembre 2023
+            <span>alternance</span> de <span>24 mois</span> dans le <span>Game Development</span> pour septembre 2023
           </p>
-          <button className="btn m-auto mt-24">
+          <button className="btn justify-center mt-24">
             <a
-              className="text-center text-xl"
+              className="text-center 2xl:text-2xl xl:text-xl lg:text-lg text-md"
               href={"mailto:julienmv02@gmail.com"}
             >
               Me contacter

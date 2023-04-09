@@ -69,6 +69,14 @@ main {
     padding: 100px 0px;
 }
 
+@media screen and (max-width: 1000px) {
+    .sections {
+        margin-left: 25px;
+        margin-right: 50px;
+        padding: 100px 0px;
+    }
+  }
+
 li {
     padding: 10px;
 }
