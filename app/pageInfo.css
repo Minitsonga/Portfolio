@@ -131,7 +131,7 @@
 }
 
 .linkImg:hover .grid-text {
-    transform: translateY(-45px);
+    transform: translateY(0px);
     opacity: 0.9;
     text-shadow: -1px 1px 1px black, 0 0 0.5em black;
 }

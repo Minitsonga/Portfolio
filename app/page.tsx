@@ -124,7 +124,7 @@ const Projects = () => {
         </h1>
 
         <div className="m-auto pl-8 pt-5 w-4/5">
-          <div className="grid grid-rows lg:grid-cols-3 grid-flow-row gap-x-4 gap-y-10">
+          <div className="grid grid-rows xl:grid-cols-3 grid-flow-row gap-x-4 gap-y-10">
             <a
               className="linkImg"
               href="/projets/floupy-flap"
@@ -138,10 +138,7 @@ const Projects = () => {
               ></Image>
               <div className="grid-overlay"></div>
               <div className="grid-text">
-                <h1 className="text-lg font-medium pb-3">FloupyFlap</h1>
-                <p className="">
-                  Évite les tuyaux et parcours la plus grande distance.
-                </p>
+                <h1 className="2xl:text-2xl xl:text-xl lg:text-lg font-medium pb-3">FloupyFlap</h1>
               </div>
             </a>
 
@@ -158,11 +155,7 @@ const Projects = () => {
               ></Image>
               <div className="grid-overlay"></div>
               <div className="grid-text">
-                <h1 className="text-lg font-medium pb-3">Protect</h1>
-                <p className="">
-                  Survie en esquivant les astéroïdes dans une simulation 2D dans
-                  l'espace.
-                </p>
+                <h1 className="2xl:text-2xl xl:text-xl lg:text-lg font-medium pb-3">Protect</h1>
               </div>
             </a>
 
@@ -179,10 +172,7 @@ const Projects = () => {
               ></Image>
               <div className="grid-overlay"></div>
               <div className="grid-text">
-                <h1 className="text-lg font-medium pb-3">Fusycal</h1>
-                <p className="">
-                  Collecte des héros dans un jeu de cartes fantaisie.
-                </p>
+                <h1 className="2xl:text-2xl xl:text-xl lg:text-lg font-medium pb-3">Fusycal</h1>
               </div>
             </a>
 
@@ -196,11 +186,7 @@ const Projects = () => {
               ></Image>
               <div className="grid-overlay"></div>
               <div className="grid-text">
-                <h1 className="text-lg font-medium pb-3">Laexo.tv</h1>{" "}
-                <p className="">
-                  Suis les Lives et événements de ton streamer Twitch sur son
-                  site vitrine.
-                </p>
+                <h1 className="2xl:text-2xl xl:text-xl lg:text-lg font-medium pb-3">Laexo.tv</h1>
               </div>
             </a>
           </div>
