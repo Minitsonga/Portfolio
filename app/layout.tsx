@@ -11,7 +11,7 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <head title="Portfolio - Julien Vandamme"></head>
+      <head><title>Portfolio - Julien Vandamme</title></head>
       <body>
         <NavBar/>
         <SideLinks/>
