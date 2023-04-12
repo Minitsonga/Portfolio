@@ -3,9 +3,7 @@
 import "./pageInfo.css";
 import Image from "next/image";
 
-import { motion, useAnimation, useScroll } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useRef } from "react";
+import { motion, useAnimation } from "framer-motion";
 
 const mainSecAnim = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } },
