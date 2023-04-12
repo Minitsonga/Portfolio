@@ -31,7 +31,9 @@ const MainSection = () => {
       animate={control}
       className="content mainSection text-center mb-44"
     >
-      <h1 className="blueText text-4xl 2xl:text-8xl xl:text-7xl lg:text-5xl mb-4">Julien Vandamme</h1>
+      <h1 className="blueText text-4xl 2xl:text-8xl xl:text-7xl lg:text-5xl mb-4">
+        Julien Vandamme
+      </h1>
       <p className="lg:pl-12 lg:pr-16  2xl:pl-20 2xl:pr-24 text-xl 2xl:text-5xl xl:text-4xl lg:text-2xl opacity-70 mb-5">
         Passioné par le développement de jeux vidéo et par le web
       </p>
@@ -123,10 +125,7 @@ const Projects = () => {
 
         <div className="m-auto pl-8 pt-5 w-4/5">
           <div className="grid grid-rows xl:grid-cols-3 grid-flow-row gap-x-4 gap-y-10">
-            <a
-              className="linkImg"
-              href="/projets/floupy-flap"
-            >
+            <a className="linkImg" href="/projets/floupy-flap">
               <Image
                 className="gridImg"
                 src="/img/FloupyFlap.png"
@@ -136,14 +135,13 @@ const Projects = () => {
               ></Image>
               <div className="grid-overlay"></div>
               <div className="grid-text">
-                <h1 className="2xl:text-2xl xl:text-xl lg:text-lg font-medium pb-3">FloupyFlap</h1>
+                <h1 className="2xl:text-2xl xl:text-xl lg:text-lg font-medium pb-3">
+                  FloupyFlap
+                </h1>
               </div>
             </a>
 
-            <a
-              className="linkImg"
-              href="/projets/protect"
-            >
+            <a className="linkImg" href="/projets/protect">
               <Image
                 className="gridImg"
                 src="/img/Protect.png"
@@ -153,14 +151,13 @@ const Projects = () => {
               ></Image>
               <div className="grid-overlay"></div>
               <div className="grid-text">
-                <h1 className="2xl:text-2xl xl:text-xl lg:text-lg font-medium pb-3">Protect</h1>
+                <h1 className="2xl:text-2xl xl:text-xl lg:text-lg font-medium pb-3">
+                  Protect
+                </h1>
               </div>
             </a>
 
-            <a
-              className="linkImg"
-              href="/projets/fusycal"
-            >
+            <a className="linkImg" href="/projets/fusycal">
               <Image
                 className="gridImg"
                 src="/img/Fusycal.png"
@@ -170,7 +167,9 @@ const Projects = () => {
               ></Image>
               <div className="grid-overlay"></div>
               <div className="grid-text">
-                <h1 className="2xl:text-2xl xl:text-xl lg:text-lg font-medium pb-3">Fusycal</h1>
+                <h1 className="2xl:text-2xl xl:text-xl lg:text-lg font-medium pb-3">
+                  Fusycal
+                </h1>
               </div>
             </a>
 
@@ -184,7 +183,9 @@ const Projects = () => {
               ></Image>
               <div className="grid-overlay"></div>
               <div className="grid-text">
-                <h1 className="2xl:text-2xl xl:text-xl lg:text-lg font-medium pb-3">Laexo.tv</h1>
+                <h1 className="2xl:text-2xl xl:text-xl lg:text-lg font-medium pb-3">
+                  Laexo.tv
+                </h1>
               </div>
             </a>
           </div>
@@ -222,7 +223,8 @@ const Contact = () => {
           <br />
           <p className="text-center text-md xl:text-lg 2xl:text-xl ">
             Je suis actuellement a la <span>recherche</span> d'une{" "}
-            <span>alternance</span> de <span>24 mois</span> dans le <span>Game Development</span> pour septembre 2023
+            <span>alternance</span> de <span>24 mois</span> dans le{" "}
+            <span>Game Development</span> pour septembre 2023
           </p>
           <button className="btn justify-center mt-24">
             <a
