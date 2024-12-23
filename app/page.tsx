@@ -44,7 +44,7 @@ const MainSection = () => {
       <button className="btn m-auto mt-8">
         <a
           className="text-center 2xl:text-3xl xl:text-2xl lg:text-xl text-md"
-          href={"/CV_ALTERNANCE.pdf"}
+          href={"/CV.pdf"}
           target={"_blank"}
         >
           Mon CV
