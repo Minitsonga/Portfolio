@@ -34,7 +34,7 @@ export default function GlobalNavBar() {
         </li>
       </ul>
       <button className={navBar.btn}>
-        <a className="text-lg" href="/CV_ALTERNANCE.pdf" target="_blank">
+        <a className="text-lg" href="/CV.pdf" target="_blank">
           Mon CV
         </a>
       </button>
