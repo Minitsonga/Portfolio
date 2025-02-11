@@ -1,4 +1,4 @@
-import "../../pageInfo.css";
+import "../../css/pageInfo.css";
 
 export default function laexotvPage() {
   return (
@@ -39,10 +39,9 @@ export default function laexotvPage() {
             du <span>VPS</span> pour pouvoir publier le site et le rendre
             accessible par tous.
             <br />
-            J'ai travaillé avec différentes <span>API</span> comme celle de
-            <span>Twitch</span> ou encore celle de{" "}
+            J'ai travaillé avec différentes <span>API</span> comme celle de <span>Twitch</span> ou encore celle de{" "}
             <a href="https://wizebot.tv" target={"_blank"}>
-              <span className="blueLink">WizeBot</span>
+              <span className="blueLink"><u>WizeBot</u></span>
             </a>
             <br />
             <br />
@@ -67,7 +66,7 @@ export default function laexotvPage() {
             </p>
             <li>
               Le suivi d'un <span className="blueText">cahier des charges</span>{" "}
-              et les envies d'une personne.
+              et les envies d'un client.
             </li>
             <li>
               La gestion du <span className="blueText">back-end</span> et{" "}
@@ -87,9 +86,9 @@ export default function laexotvPage() {
             <a
               className="text-center m-auto text-lg xl:text-2xl lg:text-xl"
               target={"_blank"}
-              href="https://laexo.tv"
+              href="https://github.com/Minitsonga/Site-Laexo"
             >
-              Visiter
+              Voir le code
             </a>
           </button>
         </div>

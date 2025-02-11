@@ -1,4 +1,4 @@
-import navBar from "./navBar.module.css";
+import navBar from "./css/navBar.module.css";
 
 export default function GlobalNavBar() {
   return (
@@ -34,7 +34,7 @@ export default function GlobalNavBar() {
         </li>
       </ul>
       <button className={navBar.btn}>
-        <a className="text-lg" href="/CV.pdf" target="_blank">
+        <a className="text-lg" href={process.env.CV_PATH} target="_blank">
           Mon CV
         </a>
       </button>

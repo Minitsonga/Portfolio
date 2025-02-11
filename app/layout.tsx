@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-head-element */
 
-import "./globals.css";
+import "./css/globals.css";
 import NavBar from "./navBar";
 import SideLinks from "./sideLinks";
 

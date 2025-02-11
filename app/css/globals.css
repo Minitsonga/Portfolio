@@ -5,14 +5,14 @@
 @font-face {
     font-family: "SimpleThread";
     src: local("SimpleThread"),
-        url("../public/font/SimpleThread.otf") format("opentype");
+        url("../../public/font/SimpleThread.otf") format("opentype");
 
     font-family: "rainy";
     src: local("rainyhearts"),
-        url("../public/font/rainyhearts.ttf") format("truetype");
+        url("../../public/font/rainyhearts.ttf") format("truetype");
     font-family: "Orbitron";
     src: local("Orbitron"),
-        url("../public/font/Orbitron.ttf") format("truetype");
+        url("../../public/font/Orbitron.ttf") format("truetype");
 }
 
 @layer base {

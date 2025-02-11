@@ -1,4 +1,4 @@
-import "../../pageInfo.css";
+import "../../css/pageInfo.css";
 
 export default function floupyFlap() {
   return (

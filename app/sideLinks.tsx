@@ -1,4 +1,4 @@
-import styles from "./sideLinks.module.css";
+import styles from "./css/sideLinks.module.css";
 
 import { CiGlobe, CiTwitter, CiLinkedin, CiMail } from "react-icons/ci";
 import { VscGithubAlt } from "react-icons/vsc";
