@@ -11,7 +11,7 @@
   "dependencies": {
     "@babel/helper-module-imports": "^7.18.6",
     "@types/node": "18.14.1",
-    "@types/react": "18.0.28",
+    "@types/react": "^18.0.28",
     "@types/react-dom": "18.0.11",
     "babel-plugin-macros": "^3.1.0",
     "framer-motion": "^10.9.1",
