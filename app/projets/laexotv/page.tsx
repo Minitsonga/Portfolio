@@ -15,7 +15,6 @@ const images = [
   { src: "/img/laexo/EventsModifierOrDelete.png", alt: "Modification ou suppression d'événements" },
   { src: "/img/laexo/ModifyEvents_Part1.png", alt: "Modification des événements - Partie 1" },
   { src: "/img/laexo/ModifyEvents_Part2.png", alt: "Modification des événements - Partie 2" },
-  { src: "/img/laexo/Bottom.png", alt: "Bas de page du site" }
 ];
 
 export default function laexotvPage() {
