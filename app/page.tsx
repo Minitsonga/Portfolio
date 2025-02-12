@@ -79,7 +79,7 @@ const About = () => {
           <p className="text-md pl-16 lg:pl-20 xl:ml-26 xl:pr-20 xl:w-2/3 xl:text-lg xl:mb-5">
             Salut ! Je m'appelle Julien Vandamme et je suis actuellement
             à la recherche d'une alternance en tant que développeur <span>Full Stack</span> ou <span>Back-End</span>. Je suis passionné par les jeux vidéo
-            depuis mon enfance et en <span>2020</span>, je me suis intéressé au monde du <span>web</span>.<br/>
+            depuis mon enfance et en <span>2020</span>, je me suis intéressé au monde du <span>web</span>.<br />
             J'ai créé plusieurs jeux et sites internet qui m'ont permis
             d'apprendre différents langages et frameworks comme le <span>C# sur Unity</span>, <span>Node.js</span> <span>JavaSpring</span>, <span>Javascript</span>, <span>React</span>, <span>Angular</span>.
           </p>
@@ -170,10 +170,9 @@ const Projects = () => {
                 </h1>
               </div>
             </a>
-
-            <a className="linkImg" href="/projets/laexotv">
+            <a className="linkImg" href="/projets/laexotv" style={{ width: "100%", height: "100%" }}>
               <Image
-                className="gridImg "
+                className="gridImg"
                 src="/img/projects_Thumbnail/Laexo.png"
                 width={250}
                 height={200}
