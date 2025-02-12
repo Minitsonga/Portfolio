@@ -1,6 +1,25 @@
+"use client";
 import "../../css/pageInfo.css";
+import Image from 'next/image';
+import { useState } from "react";
+
+
+const images = [
+  { src: "/img/laexo/MainPage.png", alt: "Page principale du site Laexo" },
+  { src: "/img/laexo/EventPage.png", alt: "Page d'un événement sur Laexo" },
+  { src: "/img/laexo/PreviewEvents.png", alt: "Aperçu des événements" },
+  { src: "/img/laexo/AdminLogin.png", alt: "Connexion administrateur" },
+  { src: "/img/laexo/Admin_EventCreator.png", alt: "Création d'un événement par l'administrateur" },
+  { src: "/img/laexo/ModifyPlaning.png", alt: "Modification du planning" },
+  { src: "/img/laexo/EventOptions.png", alt: "Options des événements" },
+  { src: "/img/laexo/EventsModifierOrDelete.png", alt: "Modification ou suppression d'événements" },
+  { src: "/img/laexo/ModifyEvents_Part1.png", alt: "Modification des événements - Partie 1" },
+  { src: "/img/laexo/ModifyEvents_Part2.png", alt: "Modification des événements - Partie 2" },
+  { src: "/img/laexo/Bottom.png", alt: "Bas de page du site" }
+];
 
 export default function laexotvPage() {
+  const [selectedImage, setSelectedImage] = useState<{ src: string; alt: string } | null>(null);
   return (
     <div className="holder">
       <div className="ml-10 mr-8 xl:ml-20 xl:mr-14 lg:ml-14 mr-10">
@@ -91,6 +110,36 @@ export default function laexotvPage() {
               Voir le code
             </a>
           </button>
+        </div>
+
+        <div className="flex flex-col mt-10">
+          <section className="p-10 bg-gray-900 text-white">
+            <h2 className="text-3xl font-bold text-center mb-6">Présentation du site Laexo</h2>
+            <p className="text-center mb-8">
+              Voici des images du site Laexo.tv pour vous donner un petit aperçu de ce projet.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {images.map((img, index) => (
+                <div key={index} className="bg-gray-800 p-4 rounded-lg shadow-md cursor-pointer" onClick={() => setSelectedImage(img)}>
+                  <Image
+                    src={img.src}
+                    alt={img.alt}
+                    width={500}
+                    height={300}
+                    className="rounded-lg"
+                  />
+                  <p className="mt-2 text-center text-sm opacity-80">{img.alt}</p>
+                </div>
+              ))}
+            </div>
+            {selectedImage && (
+              <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50" onClick={() => setSelectedImage(null)}>
+                <div className="p-4 bg-gray-900 rounded-lg max-w-4xl">
+                  <Image src={selectedImage.src} alt={selectedImage.alt} width={1000} height={600} className="rounded-lg" />
+                </div>
+              </div>
+            )}
+          </section>
         </div>
       </div>
     </div>
