@@ -57,7 +57,7 @@ export default function protectPage() {
           <h1 className="flex title blueText pl-8 text-3xl xl:text-5xl lg:text-4xl mb-8">
             [
             <p className="text-white m-auto text-center text-xl xl:text-3xl lg:text-xl px-2 xl:px-4">
-              Apport
+              Apports
             </p>
             ]
           </h1>
