@@ -34,7 +34,7 @@ export default function BotDiscordPage() {
             Ce projet est un bot Discord similaire à{" "}
             <span>
               <u>
-                <a href="https://mee6.xyz/fr" target="_BLANK">
+                <a href="https://mee6.xyz/fr" target={"_blank"}>
                   MEE6
                 </a>
               </u>
@@ -124,6 +124,17 @@ export default function BotDiscordPage() {
               sécurisée des fonctionnalités du bot.
             </li>
           </div>
+
+          <button className="btn m-auto mt-10 px-5 xl:px-10">
+            <a
+              className="text-center m-auto text-lg xl:text-2xl lg:text-xl"
+              target={"_blank"}
+              href="https://github.com/Minitsonga/Discord-Bot"
+            >
+              Voir le code
+            </a>
+          </button>
+
         </div>
 
         <div className="flex flex-col mt-10">
